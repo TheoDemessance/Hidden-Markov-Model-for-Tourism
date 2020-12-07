@@ -496,7 +496,7 @@ def AlergiaCompatible(trie, qr, qb, alpha):
     if(AlergiaTest(qr.children[0][1], qr.get_frequency(), qb.children[0][1], qb.get_frequency(), alpha) == False):
         correct = False
     
-    for a un trie.alphabet:
+    for a in trie.alphabet:
         for children_r in qr.children:
             for children_b in qb.children:
                 if(a == children_r[1] and a == children_b[1]):
