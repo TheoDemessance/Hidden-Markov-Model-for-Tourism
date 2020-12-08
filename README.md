@@ -12,5 +12,5 @@ A major contribution in this paper is to adapt the grammatical inference algorit
 
 The capital city of France, Paris is selected to demonstrate the utility of the proposed methodology.
 
-In section 1 we present the data analysis methods and results. Section 2 provides the grammar inference algorithm developed and results.
-The 3rd section focuses on the hidden Markov model method. Finally, the model is implemented and is the subject of a case study introduced in section 4.
+In folder [1](https://github.com/TheoDemessance/Hidden-Markov-Model-for-Tourism/tree/main/1-%20Data%20Analysis) we present the data analysis methods and results. Folder [2](https://github.com/TheoDemessance/Hidden-Markov-Model-for-Tourism/tree/main/2-%20Grammar%20Inference) provides the grammar inference algorithm developed and results.
+The [3](https://github.com/TheoDemessance/Hidden-Markov-Model-for-Tourism/tree/main/3-%20Hidden%20Markov%20Model)rd file focuses on the hidden Markov model method. Finally, the model is implemented and is the subject of a case study introduced in binder [4](https://github.com/TheoDemessance/Hidden-Markov-Model-for-Tourism/tree/main/4-%20Discussion%20and%20results).
