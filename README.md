@@ -10,6 +10,6 @@ Our approach is to learn behaviors from a set of temporal sequences of places, t
 
 Our model is built from the whole data without reducing its size and with-out extracting a mathematical model. Thereby, we propose a new algorithm for automatic learning of grammatical inference to reduce its complexity in the context of big data. Moreover, this algorithm is designed to maintain all behavioral possibilities on the data set. We can retrieve the principal contributions of our works in the different folders of this project:
 
-1.  A method to establish sequences representing a unique stay of a tourist fromTripadvisor ranking data; 
+1.  A method to establish sequences representing a unique stay of a tourist from Tripadvisor ranking data; 
 2.  A new method of grammatical inference for processing very large data set;
 3.  A flexible and relevant decision-making tool to represent all tourists’ behaviors in a dataset. This decision-making tool is able to predict future behavior and recommend places to visit for a tourist.
