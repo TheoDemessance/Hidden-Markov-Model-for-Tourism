@@ -1,6 +1,17 @@
-# Hidden Markov model implementation and results
+# Hidden Markov model 
 
-A frequency automaton can not be exploited with its structure, because in the literature there are not existing algorithms or methods that allow to update a frequency automaton.
-Thus, the frequency automaton is transformed into a stochastic automaton and then to a Hidden Markov Models (HMM).
+To transform a frequency automaton into a Hidden Markov Models (HMM), one has to start to change the frequency automaton into a **stochastic automaton**. This first step consists to convert the frequencies to relative frequency. 
 
-Algorithms and results are described in the folder.
+The process to transform a stochastic automaton into an HMM is described and proved by **[Dupont et al](https://www.researchgate.net/publication/2640446_Probabilistic_DFA_Inference_using_Kullback-Leibler_Divergence_and_Minimality)** and **[Harbrard et al](https://hal.archives-ouvertes.fr/hal-00085176v2)**. The steps of the process are not discussed in this folder. Although we provide an explanation of the structure of an HMM.
+
+An HMM is a graph where a node has a set of couples [item, probability], refer to the *probability* to generate the *item* on this node. The item *#* refers to the end of a sequence. The root node of an HMM is characterised by an ingoing arc without a start node. Links possess a *probability* to go from a node to another node. 
+
+## Prediction process
+
+In a HMM, the prediction process is done from a given sequence of items. Therefore, it is necessary to find where to start the prediction thanks to the **Viterbi algorithm**. Given an input sequence of items, this algorithm computes the most probable sequence of observations.
+
+In our context, we want to predict the behavior of a tourist given a chronological sequence of visited places. Following the prediction process, we can recommend visiting one or many suffixes following the decreasing value of their probabilities.
+
+## Update process
+
+The update process adapts the probabilities to jump and the probabilities to generate items for a sequence set. To update the HMM, we use the **Baum-Welch algorithm**. In our method, we implement this algorithm without any modification, so it isn't discussed in this paper.
