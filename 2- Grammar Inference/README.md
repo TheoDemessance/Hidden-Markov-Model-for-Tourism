@@ -16,7 +16,7 @@ The construction of FPT consists of inserting each item of the sequences in the 
 
 ### Relaxed and original Alergia algorithm
 
-**Relaxed Alergia algorithm** tries to recursively merge all the pairs of nodes, from the root to the leaves. Unlike the **Original Alergia algorithm**, it does not test the compatibility of children of these pairs of nodes.
+**Relaxed Alergia algorithm** tries to recursively merge all the pairs of nodes, from the root to the leaves. Unlike the **Original Alergia algorithm**, it does not test the compatibility of children of these pairs of nodes. Both algorithms are implemented in *Original_Alergia.py* and *Relaxed_Alergia.py*.
 
 To differentiate nodes that cannot merge from those that will be tested, we define two types of nodes, RED nodes and BLUE nodes.
 In the beginning, only the root node of the FPT is RED, and BLUE contains the direct children of the root. The BLUE nodes are visited successively. Once visited, a BLUE node tries to merge with the RED node. If the visited node does not merge, it becomes a RED node and all its children become BLUE. This process is repeated until all FPT nodes are RED.
