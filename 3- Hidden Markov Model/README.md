@@ -6,6 +6,8 @@ The process to transform a stochastic automaton into an HMM is described and pro
 
 An HMM is a graph where a node has a set of couples [item, probability], refer to the *probability* to generate the *item* on this node. The item *#* refers to the end of a sequence. The root node of an HMM is characterised by an ingoing arc without a start node. Links possess a *probability* to go from a node to another node. 
 
+All the different python files you can see are provided here separately to make it easier for you to understand our approach. During the realization of our work, we added the different functions in our *TrieNode* class. No need to adapt the code.
+
 ## Prediction process
 
 In a HMM, the prediction process is done from a given sequence of items. Therefore, it is necessary to find where to start the prediction thanks to the **Viterbi algorithm**, implemented in our case as you can see in *Viterbi.py*. Given an input sequence of items, this algorithm computes the most probable sequence of observations.
