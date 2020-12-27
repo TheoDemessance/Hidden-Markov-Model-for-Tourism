@@ -14,7 +14,7 @@ To apply the different algorithms, we used a matrix representation of our HMM, i
 
 In a HMM, the prediction process is done from a given sequence of items. Therefore, it is necessary to find where to start the prediction thanks to the **Viterbi algorithm**, implemented in our case as you can see in *Viterbi.py*. Given an input sequence of items, this algorithm computes the most probable sequence of observations.
 
-In our context, we want to predict the behavior of a tourist given a chronological sequence of visited places. Following the prediction process, we can recommend visiting one or many suffixes following the decreasing value of their probabilities.
+In our context, we want to predict the behavior of a tourist given a chronological sequence of visited places. Following the prediction process, we can recommend visiting one or many suffixes following the decreasing value of their probabilities available in *prediction_process.py*
 
 ## Update process
 
