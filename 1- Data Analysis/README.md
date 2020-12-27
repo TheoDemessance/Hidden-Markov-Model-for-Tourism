@@ -1,5 +1,7 @@
-In this folder we describe our data collection procedure and analyze the data properties. 
-The modelling of tourist data requires the inclusion of information about the places and properties of the users.
+Our database is composed of users, reviews, and geo-located locations. A location is composed of coordinates $(lat, long)$ and a rating. To characterize the location, each of them has been aligned with administrative areas (GADM)\footnote{GADM:\url{https://gadm.org/index.html}. 386,735 administrative areas (country, region, department, district, city, and town)}.
 
-In input we have a sample of TripAdvisor data available in the main folder, to which we perform some analysis and we create the sequences according to our method.
-As an output, in a txt file is the extracted sequences, according to users and their time travel.
+A user is identified by nationality, age and is described by a timeline. A user timeline represents a chronological set of reviews from its first reviews to its last reviews. This timeline allows computing intermediate properties: the time between two consecutive reviews, consecutive visited places. 
+
+A review represents a note given by a user on a location at a given discrete-time domain. 
+
+Different analysis and key points are clarified in the notebook.
